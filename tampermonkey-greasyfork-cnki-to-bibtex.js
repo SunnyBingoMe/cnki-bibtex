@@ -30,9 +30,6 @@
             input.innerHTML = "<a><i></i>Bibtex</a>"
             x[0].children[0].append(input)
 
-
-
-
             $("#bibbtn").click(function(){
                 $.post("https://kns.cnki.net/kns8/manage/APIGetExport",
                 {
@@ -90,12 +87,6 @@
                     document.body.removeChild(copad)
                 });
             })
-
-
-
         };
-
-
-
     })
 })();
