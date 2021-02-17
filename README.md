@@ -5,6 +5,14 @@
 
 所得bibtex 为知网提供的NodeExpress转化而来，citation key 使用时请自行编辑 （例如通过 [betterBibtex 插件](https://github.com/retorquere/zotero-better-bibtex/releases)）。
 
-此js是油猴tampermonkey的插件/脚本。
+Firefox    中先安装 [Greasemonkey]扩展后，再安装脚本；
+
+Chrome  中先安装 [tampermonkey]后，再安装脚本；
+
+Safari      中先安装 [Ninjiakit]后，再安装脚本
+
+Edge       中先安装 [tampermonkey]后，再安装脚本
+
+IE 不支持。
 
 ref: [Hao同学的](https://greasyfork.org/zh-CN/scripts/393305-%E7%9F%A5%E7%BD%91-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE-bibtex)版本不能被Zotero识别且无法pull-reques，因此另开repo。
