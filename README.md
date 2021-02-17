@@ -7,4 +7,4 @@
 
 此js是油猴tampermonkey的插件/脚本。
 
-ref: [Hao同学的](https://greasyfork.org/zh-CN/scripts/393305-%E7%9F%A5%E7%BD%91-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE-bibtex)
+ref: [Hao同学的](https://greasyfork.org/zh-CN/scripts/393305-%E7%9F%A5%E7%BD%91-%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE-bibtex)版本不能被Zotero识别且无法pull-reques，因此另开repo。
