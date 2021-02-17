@@ -2,7 +2,7 @@
 // @name         知网 参考文献 to bibtex
 // @namespace    https://github.com/SunnyBingoMe
 // @require      https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js
-// @version      2.0
+// @version      2.1
 // @description  从知网中直接复制bibtex, Hao同学的版本不能被Zotero识别且无法pull-reques，因此另开repo。
 // @author       Hao, SunnyBingoMe
 // @match        https://kns.cnki.net/kcms/detail/detail.aspx?dbcode=*
@@ -55,14 +55,21 @@
                                 bibtext = "@article{myCiteKey,\n"
                                 is_article = 1
                             }else if(detail == "conferenceproceedings"){
-                                bibtext = "@inproceedings{cite_label ,\n"
+                                bibtext = "@inproceedings{myCiteKey,\n"
+                            }else if(detail == "thesis"){
+                                bibtext = "@thesis{myCiteKey,\n"
+                            }else{
+                                alert("未知类型：" + detail)
                             }
                         }else if(item == "issue"){
                             bibtext = bibtext + "   number={" + detail + "},\n"
                         }else if (item == "notes" || item == "databaseprovider" || item == "authoraddress"){
                         }else {
                             if (item == "author"){
-                                detail = detail.substr(0, detail.length-1).replaceAll(";", " and ")
+                                if (detail.charAt(detail.length-1) == ";"){
+                                    detail = detail.substr(0, detail.length-1)
+                                }
+                                detail = detail.replaceAll(";", " and ")
                             }else if(item == "isbn/issn"){
                                 if (is_article){
                                     item = "issn"
